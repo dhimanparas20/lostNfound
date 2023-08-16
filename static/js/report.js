@@ -46,3 +46,20 @@ $(document).ready(function() {
       document.getElementById("myForm").reset();
   });
 });
+
+const fileInput = document.getElementById('image');
+    const uploadIndicator = document.getElementById('upload-indicator');
+
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files.length > 0) {
+        uploadIndicator.textContent = 'File uploaded';
+        uploadIndicator.classList.remove('not-uploaded');
+        uploadIndicator.classList.add('uploaded');
+      } else {
+        uploadIndicator.textContent = 'File not uploaded';
+        uploadIndicator.classList.remove('uploaded');
+        uploadIndicator.classList.add('not-uploaded');
+      }
+    });
+
+

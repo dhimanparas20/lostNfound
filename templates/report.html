@@ -79,11 +79,14 @@
                 <div class="col-12">
                   <label for="image"></label>
                   <div class="file-input-wrapper">
-                    <input type="file" id="image" name="image" >
+                    <input type="file" id="image" name="image">
                     <input type="hidden" id="defaultImage" name="defaultImage" value="default">
-                    <label class="custom-file-label" for="image">Image (Optional)</label>
+                    <label class="custom-file-label" for="image">Choose File</label>
                   </div>
-                </div> 
+                  <div class="upload-status">
+                    <span id="upload-indicator" class="not-uploaded">File not uploaded</span>
+                  </div>
+                </div>
               </div>
 
               <div class="mt-4 pt-2">
@@ -99,4 +102,5 @@
   </div>
 </section>
 <script src="/static/js/report.js/"></script>
+
 {% endblock %}
