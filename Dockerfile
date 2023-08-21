@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /app
 COPY . /app/
 
-# Expose the port that the Flask development server will listen on
-EXPOSE 5000
+# Expose the port that Gunicorn will listen on
+EXPOSE 8000
 
-# Define the command to run your application using the Flask development server
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+# Define the command to run your application using Gunicorn
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "app:app"]
