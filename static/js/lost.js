@@ -47,6 +47,11 @@ $(document).ready(function() {
                                     ? `<button class="btn btn-danger" type="submit" onclick="deleteItem('${item.id}') ">Delete</button>`
                                     : ''
                               }
+                              ${
+                                userAdmin === true && item.status === 1
+                                    ? `<button class="btn btn-info" type="submit" onclick="revertItem('${item.id}') ">Revert</button>`
+                                    : ''
+                              }
                            </div>
                        </div>
                    `;
@@ -95,7 +100,22 @@ function deleteItem(itemId){
             console.error('Error Sending Request', error);
         }
     });
-
 }
 
-
+function revertItem(itemId){
+    $.ajax({
+        url: '/revert/',
+        method: 'POST',
+        data: {
+            itemId: itemId,
+            statusType: 'LOST'
+          },
+        success: function(data) {
+            //console.log(data);
+            location.reload();
+        },
+        error: function(xhr, status, error) {
+            console.error('Error Sending Request', error);
+        }
+    });
+}
