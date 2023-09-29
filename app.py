@@ -159,7 +159,17 @@ class delete(Resource):
         if statusType == "FOUND":
           return found_db.deleteItem(itemId)
         elif statusType == "LOST":
-          return lost_db.deleteItem(itemId)  
+          return lost_db.deleteItem(itemId) 
+
+class revert(Resource):
+    def post(self):
+        itemId = request.form.get('itemId')
+        statusType = request.form.get('statusType')
+        #print(statusType)
+        if statusType == "FOUND":
+          return found_db.revertItem(itemId)
+        elif statusType == "LOST":
+          return lost_db.revertItem(itemId)         
 
 class login(Resource):
   def get(self):
@@ -192,6 +202,7 @@ api.add_resource(markItem, '/markFound/')
 api.add_resource(fetchAll, '/fetch/')
 api.add_resource(report, '/report/')
 api.add_resource(delete, '/delete/')
+api.add_resource(revert, '/revert/')
 api.add_resource(login, '/login/')
 api.add_resource(logout, '/logout/')
 
