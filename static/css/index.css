@@ -44,10 +44,10 @@
   border-radius: 40px; /* Add border-radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom right, rgb(24, 131, 131), rgb(20, 20, 20));
+  background: -webkit-linear-gradient(to bottom right, rgb(24, 131, 131), rgba(245, 87, 108, 1));
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to bottom right, rgb(24, 131, 131), rgb(20, 20, 20))
+  background: linear-gradient(to bottom right, rgb(24, 131, 131), rgba(245, 87, 108, 1))
   }
 
 
@@ -58,19 +58,19 @@
 
 .recentfound{
   margin-top: 20px;
-  color: #f093fb;
+  color: rgb(24, 131, 131);
 }
 
 
 .gradient-custom {
   /* fallback for old browsers */
-  background: #f093fb;
+  background: rgb(24, 131, 131);
   
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  background: -webkit-linear-gradient(to bottom right, rgb(24, 131, 131), rgba(245, 87, 108, 1));
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  background: linear-gradient(to bottom right, rgb(24, 131, 131), rgba(245, 87, 108, 1))
   }
   
   .card-registration .select-input.form-control[readonly]:not([disabled]) {
