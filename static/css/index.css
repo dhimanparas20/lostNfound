@@ -21,8 +21,13 @@
   margin-left: 25px;
   margin-top: 30px;
   background-color: whitesmoke;
-  border-radius: 5px;
-  box-shadow: 5px 4px 6px #e516fc;
+  border-radius: 20px;
+  box-shadow: 5px 4px 6px rgb(24, 131, 131);
+  transition: transform 0.3s ease-in-out;
+}
+
+#cardd:hover{
+  transform: scale(1.1);
 }
 
 #card-container{
@@ -34,15 +39,15 @@
   margin-top: 30px;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  background-color:  #f093fb; /* Set your desired background color */
+  background-color:  rgb(24, 131, 131); /* Set your desired background color */
   border: 1px solid #d1d1d1; /* Add a border if desired */
   border-radius: 40px; /* Add border-radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  background: -webkit-linear-gradient(to bottom right, rgb(24, 131, 131), rgb(20, 20, 20));
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  background: linear-gradient(to bottom right, rgb(24, 131, 131), rgb(20, 20, 20))
   }
 
 
