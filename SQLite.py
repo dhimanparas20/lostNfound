@@ -71,3 +71,11 @@ class SQLiteDatabase:
         self.conn.commit()
         return {"message": "Item Deleted Successfully"}
         self.conn.close()  
+
+    def revertItem(self, itemId):
+        self.conn = sqlite3.connect(self.db_file)
+        self.cursor = self.conn.cursor()
+        self.cursor.execute("UPDATE data set status=0 WHERE id = ?", (itemId,))
+        self.conn.commit()
+        return {"message": "Item Reverted Successfully"}
+        self.conn.close()
