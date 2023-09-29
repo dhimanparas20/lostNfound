@@ -21,7 +21,7 @@ The College Lost and Found Website is a user-friendly platform designed to help 
 1. Clone the repository: `git clone https://github.com/dhimanparas20/lostNfound.git`
 2. Navigate to the project directory: `cd lostAndFound`
 3. Install dependencies: `pip install -r requirements.txt`
-4. Run the Flask development server: `flask run`
+4. Run the Flask development server: `python3 app.py`
 
 ## Usage
 
@@ -29,6 +29,7 @@ The College Lost and Found Website is a user-friendly platform designed to help 
 2. Use the provided forms to report lost items or post found items.
 3. Explore the lost and found sections to discover items reported by others.
 4. Utilize search and filtering options to narrow down the list of items.
+5. Visit `http://127.0.0.1:5000/login/` to see the admin control pannel. (User: ken , Password: Mst@2069)
 
 ## Screenshots
 
