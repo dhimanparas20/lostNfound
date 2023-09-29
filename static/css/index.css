@@ -9,8 +9,11 @@
 }
 
 .logoImage{
-  border-radius: 50%;
+  border-radius: 10%;
+  height: 35%;
+  width: 35%;
 }
+
 .card-img-top{
   height: 65%;
   width: 40%;
