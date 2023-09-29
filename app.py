@@ -87,7 +87,7 @@ class uploadItem(Resource):
               return response 
 
           else :
-            flash('Allowed image types are - png, jpg, jpeg, gif')
+            app.flash('Allowed image types are - png, jpg, jpeg, gif')
             return redirect(request.url) 
 
         elif statusType == "FOUND":
@@ -104,7 +104,7 @@ class uploadItem(Resource):
               return response  
 
           else :
-            flash('Allowed image types are - png, jpg, jpeg, gif')
+            app.flash('Allowed image types are - png, jpg, jpeg, gif')
             return redirect(request.url)   
       else:
         ext = "jpg"
